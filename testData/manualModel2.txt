@@ -1,0 +1,18 @@
+s1 e1 s2
+s2 e2 s2
+s2 e3 s2
+s2 e4 s4
+s2 e11 s3
+s3 e5 s2
+s4 e6 s6
+s6 e7 s5
+s5 e8 s6
+s5 e9 s5
+s5 e10 s1
+s3 e12 s1
+---
+e2 e12 1
+e4 e5 2
+e3 e11 1
+e10 e10 1
+e6 e7 2
