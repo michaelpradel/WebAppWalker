@@ -7,6 +7,6 @@ WebAppWalker is a framework for automated UI-level testing of web applications. 
 by Michael Pradel, Parker Schuh, George Necula, and Koushik Sen  
 at Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2014
 
-This repository provides the source code of our implementation. The easiest way to experiment with EventBreak is to use this [Virtualbox VM image](http://www.eecs.berkeley.edu/~pradel/EventBreak_OOPSLA_Artifact.tar.gz), where EventBreak, all its requirements, and several benchmark applications are pre-installed. The image contains a file README_EventBreak_Artifact.txt with instructions on how to use it.
+This repository provides the source code of our implementation. The easiest way to experiment with EventBreak is to use this [Virtualbox VM image](http://www.eecs.berkeley.edu/~pradel/EventBreak_OOPSLA_Artifact2.tar.gz), where EventBreak, all its requirements, and several benchmark applications are pre-installed. The image contains a file README_EventBreak_Artifact.txt with instructions on how to use it.
 
 
