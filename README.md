@@ -9,4 +9,4 @@ at Conference on Object-Oriented Programming, Systems, Languages, and Applicatio
 
 This repository provides the source code of our implementation. The easiest way to experiment with EventBreak is to use this [Virtualbox VM image](http://www.eecs.berkeley.edu/~pradel/EventBreak_OOPSLA_Artifact2.tar.gz), where EventBreak, all its requirements, and several benchmark applications are pre-installed. The image contains a file README_EventBreak_Artifact.txt with instructions on how to use it.
 
-
+WebAppWalker has been tested with Firefox versions up to 39.0 and currently does not support newer versions.
