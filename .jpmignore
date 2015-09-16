@@ -1,0 +1,10 @@
+nbproject
+mpAddonDev
+EventBreak_Results
+README_EventBreak_Artifact.txt
+.gitignore
+*~
+*.swp
+tests/tizen
+.idea
+*debuglog.txt

@@ -1,9 +1,10 @@
 {
   "name": "webappwalker",
   "fullName": "WebAppWalker",
-  "id": "jid1-UjG7KyBWEwwDZg",
+  "id": "jid1-UjG7KyBWEwwDZg@jetpack",
   "description": "Test generator for web applications",
   "author": "Michael Pradel",
   "license": "GPLv2",
-  "version": "0.2"
+  "version": "0.2.0",
+  "main": "lib/main.js"
 }
