@@ -13,17 +13,17 @@ This repository provides the source code of our implementation. The easiest way 
 
 ## Installation
 
- 1. Clone this repository:
+ * Clone this repository:
 ```
 git clone https://github.com/michaelpradel/WebAppWalker.git
 ```
 
- 2. Install jpm (required to launch WebAppWalker):
+ * Install jpm (required to launch WebAppWalker):
 ```
 npm install jpm --global
 ```
 
- 3. Install Firefox >= 38.0
+ * Install Firefox >= 38.0
 
 
 ## Usage
@@ -34,14 +34,13 @@ jpm run -b /path/to/your/firefox --binary-args="-no-remote"
 ```
 
 By default, jpm creates a new Firefox profile each time you run WebAppWalker. To store visited URLs, settings, etc., create and use a profile specifically for WebAppWalker.
- 1. Create a new profile via the profile manager:
+ * Create a new profile via the profile manager:
 ```
 /path/to/your/firefox -no-remote --ProfileManager
 ```
- 2. Start WebAppWalker with the newly created profile:
+ * Start WebAppWalker with the newly created profile:
 ```
 jpm run -b /path/to/your/firefox --binary-args="-no-remote" -p nameOfYourProfile
-
 ```
 
 Go to some URL and start WebAppWalker by clicking the "Play" button. You should see that WebAppWalker triggers events, such as clicks. To stop it, click the "Pause" button.
