@@ -97,6 +97,7 @@
   var maxPseudoHandlerId = 0;
   function createPseudoEvent(type, handler, elem, eventDetails) {
     var evt = new commonUtil.Event(type, handler.toString(), elem, eventDetails);
+    evt.handler = handler;
     evt.isPseudoEvent = true;
     evt.handlerId = maxPseudoHandlerId++;
     id2PseudoHandler[evt.handlerId] = handler;
@@ -423,10 +424,17 @@
   function unwrapObject(object) {
     if (!object)
       return object;
-    if (object.wrappedJSObject) {
-      return object.wrappedJSObject;
+    var wrappedObject = object;
+    try {
+      // throws an exception in case SecurityManager does not allow access to wrappedJSObject property
+      wrappedObject = object.wrappedJSObject;
     }
-    return object;
+    finally {
+      if (wrappedObject)
+        return wrappedObject;
+      else
+        return object;
+    }
   }
 
   function createDomEvent(evt, elem) {
