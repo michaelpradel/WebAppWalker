@@ -336,7 +336,10 @@
   }
 
   function canTrigger(evt) {
-    if (evt.isPseudoEvent && evt.xpath === undefined) {
+    if (!evt) {
+      self.port.emit("canTriggerReturn", false);
+    }
+    else if (evt.isPseudoEvent && evt.xpath === undefined) {
       self.port.emit("canTriggerReturn", true);
     } else {
       var elem = getByXpath(evt.xpath);
