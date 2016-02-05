@@ -293,7 +293,10 @@
     // click on links
     applyToTopAndAllFrames("a", function() {
       var href = $(this).attr("href");
+      // use this for normal test generation (avoids clicking on external links):
       if (href && benchmarkConfig.isOnURLWhitelist(href) && (isRelativeLink(href) || isGoodURL(href))) {
+      // use this to find all clickable elements, including external links:
+      //if (href) {
         if (!hasHandler(this)) {
           $(this).on("click", function() {
           });
