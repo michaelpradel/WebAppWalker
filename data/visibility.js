@@ -115,8 +115,8 @@
       if (element.nodeType === 9)
         break; // stop at document
       var style = window.getComputedStyle(element);
-      if (style.display === 'none' || style.visibility === 'hidden'
-          || style.opacity === '0') {
+      if (style && (style.display === 'none' || style.visibility === 'hidden'
+          || style.opacity === '0')) {
         return true;
       }
     } while (element = element.parentNode);

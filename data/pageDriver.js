@@ -359,7 +359,7 @@
     }
   }
 
-  function trigger(evt, elem) {
+  function trigger(evt) {
     unwrapObject(window).onbeforeunload = null; // to avoid pop-ups
 
     unwrapObject(window)[globalCostVarName] = 0; // reset accumulated cost
