@@ -17,7 +17,7 @@ The easiest way to experiment with EventBreak is to use this [Virtualbox VM imag
 
 ### Macro-based Test Generation
 
-This approach analyzes execution traces gathered from human users of a web site to infer common usage patterns called macro events. Following the *monkey see, monkey do* principle, the automated test generator imitates human users by replaying the macro events. See this paper for details:
+This approach analyzes execution traces gathered from human users of a web site to infer common usage patterns called macro events. Following the *Monkey See, Monkey Do* principle, the automated test generator then imitates human users by replaying the macro events. See this paper for details:
 
 [*Monkey See, Monkey Do: Effective Generation of GUI Tests with Inferred Macro Events*](http://mp.binaervarianz.de/issta2016-macros.pdf)  
 by Markus Ermuth and Michael Pradel
