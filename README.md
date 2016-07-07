@@ -1,13 +1,27 @@
 WebAppWalker
 ============
 
-WebAppWalker is a framework for automated UI-level testing of web applications. The framework generates sequences of events, such as clicks on DOM elements, scrolling, and filling forms. We have instantiated the WebAppWalker framework into **EventBreak**, an approach to analyze the responsiveness of web applications through performance-guided test generation. Details on EventBreak are described in this paper:
+WebAppWalker is a framework for automated UI-level testing of web applications. The framework gathers the set of events available on a web site, such as clicks on DOM elements, scrolling, and filling forms, and automatically triggers sequences of these events. Which sequences to trigger is decided by a strategy. You can implement a new test generation approach by implementing a new strategy.
+
+We have instantiated the WebAppWalker framework in two projects:
+
+### EventBreak
+
+EventBreak is an approach to analyze the responsiveness of web applications through performance-guided test generation. See this paper for details:
 
 [*EventBreak: Analyzing the Responsiveness of User Interfaces through Performance-Guided Test Generation*](http://mp.binaervarianz.de/oopsla2014.pdf)  
 by Michael Pradel, Parker Schuh, George Necula, and Koushik Sen  
 at Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2014
 
-This repository provides the source code of our implementation. The easiest way to experiment with EventBreak is to use this [Virtualbox VM image](http://www.eecs.berkeley.edu/~pradel/EventBreak_OOPSLA_Artifact2.tar.gz), where EventBreak, all its requirements, and several benchmark applications are pre-installed. The image contains a file README_EventBreak_Artifact.txt with instructions on how to use it.
+The easiest way to experiment with EventBreak is to use this [Virtualbox VM image](http://www.eecs.berkeley.edu/~pradel/EventBreak_OOPSLA_Artifact2.tar.gz), where EventBreak, all its requirements, and several benchmark applications are pre-installed. The image contains a file README_EventBreak_Artifact.txt with instructions on how to use it.
+
+### Macro-based Test Generation
+
+This approach analyzes execution traces gathered from human users of a web site to infer common usage patterns called macro events. Following the *monkey see, monkey do* principle, the automated test generator imitates human users by replaying the macro events. See this paper for details:
+
+[*Monkey See, Monkey Do: Effective Generation of GUI Tests with Inferred Macro Events*](http://mp.binaervarianz.de/issta2016-macros.pdf)  
+by Markus Ermuth and Michael Pradel
+at International Symposium on Software Testing and Analysis (ISSTA), 2016
 
 
 
